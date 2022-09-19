@@ -22,16 +22,16 @@ Requisições para a API devem seguir os padrões:
     + Body
 
             {
-	            "first_name": "Paula",
-	            "last_name": "Lima",
-	            "age": 32,
-	            "address": "Frascinsco Deleveiga",
+	            "first_name": "Seu Nome",
+	            "last_name": "Sobrenome",
+	            "age": 18,
+	            "address": "Seu endereço",
 	            "number": "1251",
-	            "zip_code": "855223412",
-	            "city": "Curitiba",
-	            "cellphone": "41-88521241",
-	            "email": "paulalima@gmail.com",
-	            "password": "paulalima"
+	            "zip_code": "999999999",
+	            "city": "Cidade",
+	            "cellphone": "41999999999",
+	            "email": "seuemail@seudominio.com",
+	            "password": "suasenha"
             }
             
 ### `POST` - [Endereço da API](https://api-login-cadastro-recup-senha.onrender.com)/user/login
