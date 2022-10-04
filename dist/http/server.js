@@ -39,17 +39,20 @@ const PORT = process.env.PORT || 4000;
 app.use(express_1.default.json());
 app.use(routes_1.default);
 app.use((0, celebrate_1.errors)());
-routes_1.default.get('/', async (req, res) => {
-    return res.json({ message: 'API is working.' });
+routes_1.default.get("/", async (req, res) => {
+    return res.json({ message: "API IS WORKING." });
 });
 //middleware de tratamento de erro
 app.use(error_1.errorMiddleware);
 app.listen(PORT, async () => {
     const db_connection = process.env.MONGO_CONNECTION;
-    await mongoose_1.default.connect(db_connection).then(() => {
-        console.log('Mongo is connected!');
-    }).catch((err) => {
-        console.log('Ocorreu o seguinte erro ao tentar se conectar com o MongoDB:', err);
+    await mongoose_1.default
+        .connect(db_connection)
+        .then(() => {
+        console.log("Mongo is connected!");
+    })
+        .catch((err) => {
+        console.log("Ocorreu o seguinte erro ao tentar se conectar com o MongoDB:", err);
     });
     console.log(`Server is running on port ${PORT}.`);
 });
